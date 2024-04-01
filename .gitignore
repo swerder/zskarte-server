@@ -118,3 +118,4 @@ build
 data
 dist
 .strapi
+servers.json
