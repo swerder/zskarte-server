@@ -32,10 +32,12 @@ export default ({ env }) => ({
     enabled: true,
     config: {
       contentTypes: [],
-      IOServerOptions: {
-        transports: ['websocket'],
-        cors: {
-          origins: '*:*',
+      socket: {
+        serverOptions: {
+          transports: ['websocket'],
+          cors: {
+            origin: '*',
+          },
         },
       },
       events: [
